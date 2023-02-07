@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RVC - Login</title>
+	<link href="../Home/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body class="login-html">
+
+    <header>
+        <a href="../Home/index.html" class="logo">Rock Volleyball Club</a>
+        <nav>
+            <ul>
+                <li><a href="../tournaments/tournaments.html">Tournaments</a></li>
+                <!-- <li><a href="#">Clinics</a></li> -->
+                <li><a href="../coaches/coaches.html">Coaches</a></li>
+                <li><a href="../about/about.html">About Us</a></li>
+                <li><a href="../schedule/schedule.html">Schedule a Training</a></li>
+                <li><a href="../schedule/trainings.html">My Trainings</a></li>
+              </ul>
+        </nav>
+        <div class="nav-right">
+          <a href="../sign-up/signUp.html"><button class="sign-up-btn">Create account</button></a>
+        </div>
+      </header>
+
+      <div class="login-form-container">
+        <form action="" class="login-form">
+            <h1 class="login-title">Sign in</h1>
+            <br>
+            <div class="login-input-container">
+                <label for="login" >Email</label>
+                <input type="login" name="login" id="login" required>
+            </div>
+            <br>
+            <div class="login-input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <span id="loginError"></span>
+
+            <button type="submit" class="login-btn-submit">Login</button>
+
+            
+        </form>
+    </div>
+    
+    <div class="successful-login"></div>
+
+      <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rock.volleyballclub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../Home/main.js"></script>
+    <script src="../Login/login.js"></script>
+</body>
+</html>

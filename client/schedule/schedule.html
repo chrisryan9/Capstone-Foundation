@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RVC - Schedule Training</title>
+	<link href="../Home/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body class="schedule-html">
+
+    <header class="header">
+        <a href="../Home/index.html" class="logo">Rock Volleyball Club</a>
+        <nav>
+          <ul>
+            <li><a href="../tournaments/tournaments.html">Tournaments</a></li>
+            <!-- <li><a href="#">Clinics</a></li> -->
+            <li><a href="../coaches/coaches.html">Coaches</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="../schedule/schedule.html">Schedule a Training</a></li>
+            <li><a href="../schedule/trainings.html">My Trainings</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right">
+          <a href="../sign-up/signUp.html"><button class="sign-up-btn">Create account</button></a>
+          <a href="../Login/login.html"><button class="login-btn">Login</button></a>
+        </div>
+    </header>
+
+    <span id="user-id-container"></span>
+    
+    <main class="schedule-container">
+        <aside class="schedule-form">
+            <h2 id="schedule-header">Schedule a Training</h2>
+
+            <span id="schedule-error"></span>
+
+            <form id="schedule-form-box">
+
+              <div id="select-containers">
+                <label for="name-input"></label>
+                <select id="account-id-select"></select>
+                
+                <label for="coach-input"></label>
+                <select id="coach-select"></select>
+              </div>
+
+                    <div class="schedule-date" style="cursor: pointer;">
+                      <h4 class="datetime"></h4>
+                      <label for="date" style="display: block;"></label>
+                      <input type="date" name="date" id="training-date">
+                    
+                      <label for="time" style="display: block;"></label>
+                      <input type="time" name="time" id="training-time">
+                    </div>
+              
+                    
+                    <label for="notes"></label>
+                    <input type="text" name="notes" id="notes" placeholder="Training Notes">
+                    <button class="schedule-training">Schedule</button>
+                    <div class="schedule-training-container"></div>
+
+                    <div class="email-sent"></div>
+            </form>
+
+
+        </aside>
+    </main>
+
+
+    <footer>
+      <div class="footer-content">
+          <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rock.volleyballclub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+      </div>
+  </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../Home/main.js"></script>
+    <script src="../schedule/schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RVC - Tournaments</title>
+	<link href="../Home/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body class="tournaments-html">
+
+    <header>
+        <a href="../Home/index.html" class="logo">Rock Volleyball Club</a>
+        <nav>
+            <ul>
+                <li><a href="../tournaments/tournaments.html">Tournaments</a></li>
+                <!-- <li><a href="#">Clinics</a></li> -->
+                <li><a href="../coaches/coaches.html">Coaches</a></li>
+                <li><a href="../about/about.html">About Us</a></li>
+                <li><a href="../schedule/schedule.html">Schedule a Training</a></li>
+                <li><a href="../schedule/trainings.html">My Trainings</a></li>
+              </ul>
+        </nav>
+        <div class="nav-right">
+          <a href="../sign-up/signUp.html"><button class="sign-up-btn">Create account</button></a>
+          <a href="../Login/login.html"><button class="login-btn">Login</button></a>
+        </div>
+      </header>
+
+      <span id="user-id-container"></span>
+
+      <main class="upcoming-tournaments">
+        <h2>Upcoming Tournaments</h2>
+        <table class="tournaments-tables">
+          <tr>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Tournament Name</th>
+          </tr>
+          <tr>
+            <td>March 5th, 2023</td>
+            <td>San Francisco, CA</td>
+            <td><a href="https://ncva.com/kickoff/" target="_blank">California Classic</a></td>
+          </tr>
+          <tr>
+            <td>April 2nd, 2023</td>
+            <td>Los Angeles, CA</td>
+            <td><a href="https://socalcupvolleyball.com/events/the-showcase/" target="_blank">SoCal Cup: The Showcase</a></td>
+          </tr>
+          <tr>
+            <td>May 7th, 2023</td>
+            <td>Las Vegas, NV</td>
+            <td><a href="https://www.scvavolleyball.org/page/girls-red-rock-rave#!" target="_blank">The SCVA Red Rock Raves</a></td>
+          </tr>
+          <tr>
+            <td>June 4th, 2023</td>
+            <td>Denver, CO</td>
+            <td><a href="https://coloradocrossroads.org/tournament-info/" target="_blank">Rocky Mountain Classic</a></td>
+          </tr>
+          <tr>
+            <td>July 2nd, 2023</td>
+            <td>Chicago, IL</td>
+            <td><a href="http://windycityqualifier.com/" target="_blank">Windy City Open</a></td>
+          </tr>
+          <tr>
+            <td>August 6th, 2023</td>
+            <td>Miami, FL</td>
+            <td><a href="https://usavolleyball.org/wp-content/uploads/2023/01/2023-SC-Directional-Sign_22x28_Court-Layout.jpg" target="_blank">Sunshine Classic</a></td>
+          </tr>
+          <tr>
+            <td>September 3rd, 2023</td>
+            <td>New York, NY</td>
+            <td><a href="https://www.newyorkelitevolleyball.com/">Big Apple Classic</a></td>
+          </tr>
+          <tr>
+            <td>October 1st, 2023</td>
+            <td>Seattle, WA</td>
+            <td><a href="https://www.emeraldcityclassic.us/" target="_blank">Emerald City Classic</a></td>
+          </tr>
+        </table>
+      </main>
+      
+      <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rock.volleyballclub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../Home/main.js"></script>
+    <script src="../Login/login.js"></script>
+</body>
+</html>

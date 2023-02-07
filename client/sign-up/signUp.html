@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RVC - Create account</title>
+	<link href="../Home/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body class="signUp-html">
+
+    <!-- <header> -->
+        <a  href="../Home/index.html" class="sign-up-logo">Rock Volleyball Club</a>
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Tournaments</a></li>
+                <li><a href="#">Clinics</a></li>
+                <li><a href="#">Coaches</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../schedule/schedule.html">Schedule a Training</a></li>
+                <li><a href="../schedule/trainings.html">My Trainings</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <a href="../Login/login.html"><button class="login-btn">Login</button></a>
+        </div> -->
+        <!-- </header> -->
+        
+        <div class="sign-up-form-container">
+        <form action="" class="sign-up-form">
+            <!-- <h1 class="welcome-signup-form">Welcome to Rock Volleyball Club!</h1> -->
+            <h1 class="signup-form-title">Create account</h1>
+            
+            <div class="signup-input-container">
+                <label for="name">Your name</label>
+                <br>
+                <input type="text" id="sign-up-name" name="sign-up-name" placeholder=" First and Last Name" required>
+            </div>
+            <br>
+            <div class="signup-input-container">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="sign-up-email" name="sign-up-email" required>
+            </div>
+            <br>
+            <div class="signup-input-container">
+                <label for="phone-number">Phone number</label>
+                <br>
+                <input type="tel" id="sign-up-phone-number" name="sign-up-phone-number" required>
+            </div>
+            <br>
+            <div class="signup-input-container">
+                <label for="password">Password</label>
+                <br>
+                <input type="password" id="sign-up-password" name="sign-up-password" placeholder=" Password must be at least 6 characters" required>
+                <br>
+            </div>
+            <br>
+            <div class="signup-input-container">
+                <label for="password-verify">Re-enter password</label>
+                <input type="password" id="sign-up-password-verify" name="sign-up-password-verify" required>
+                <span id="error"></span>
+            </div>
+            <br>
+            <button type="submit" class="submit-btn">Sign Up!</button>
+            <br>
+            <div class="sign-in-container">
+                <label class="sign-in-label">Already have an account?  </label>
+                <a class="sign-in-btn" href="../Login/login.html">  Sign in</a>
+              </div>
+
+              
+              <div class="successful-signup"></div>
+            </form>
+            
+        </div>
+        
+    
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rock.volleyballclub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../Home/main.js"></script>
+    <script src="../sign-up/signUp.js"></script>
+</body>
+</html>

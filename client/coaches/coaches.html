@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RVC - Coaches</title>
+	<link href="../Home/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body class="coaches-html">
+
+    <header>
+        <a href="../Home/index.html" class="logo">Rock Volleyball Club</a>
+        <nav>
+            <ul>
+                <li><a href="../tournaments/tournaments.html">Tournaments</a></li>
+                <!-- <li><a href="#">Clinics</a></li> -->
+                <li><a href="../coaches/coaches.html">Coaches</a></li>
+                <li><a href="../about/about.html">About Us</a></li>
+                <li><a href="../schedule/schedule.html">Schedule a Training</a></li>
+                <li><a href="../schedule/trainings.html">My Trainings</a></li>
+              </ul>
+        </nav>
+        <div class="nav-right">
+          <a href="../sign-up/signUp.html"><button class="sign-up-btn">Create account</button></a>
+          <a href="../Login/login.html"><button class="login-btn">Login</button></a>
+        </div>
+      </header>
+
+      <span id="user-id-container"></span>
+
+      <h1 class="meet-coaches">Meet Our Coaches!</h1>
+    <div class="coach-container" style="display: flex; justify-content: space-between;">
+      <div class="coach-card">
+        <img id="coach-headshot" src="data:image/jpeg;base64,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" alt="Coach 1">
+        <div class="coach-name">
+            <h2>Paige Phillips</h2>
+        </div>
+        <div class="coach-experience"> 
+            <p>Experience: 10 years</p>
+        </div>
+        <div class="coach-bio">
+            <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero auctor, tincidunt lacus eu, commodo metus. In blandit accumsan egestas. Sed non enim purus. Aliquam tempor congue justo, ac malesuada ex elementum eu.</p>
+        </div>
+      </div>
+      <div class="coach-card">
+        <img id="coach-headshot" src="https://images.sidearmdev.com/resize?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2fathletics.uwsp.edu%2fimages%2f2018%2f8%2f16%2fKooi_Lyndsay_2.jpg&width=300&type=jpeg" alt="Coach 2">
+        <div class="coach-name">
+            <h2>Lyndsay Kooi</h2>
+        </div>
+        <div class="coach-experience">
+            <p>Experience: 7 years</p>
+        </div>
+        <div class="coach-bio">
+            <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero auctor, tincidunt lacus eu, commodo metus. In blandit accumsan egestas. Sed non enim purus. Aliquam tempor congue justo, ac malesuada ex elementum eu.</p>
+        </div>
+      </div>
+      <div class="coach-card">
+        <img id="coach-headshot" src="https://files.armssoftware.com/market/file/public/7294275/baf36f15bdc0" alt="Coach 3">
+        <div class="coach-name">
+            <h2>Rob Neilson</h2>
+        </div>
+        <div class="coach-experience">
+            <p>Experience: 5 years</p>
+        </div>
+        <div class="coach-bio">
+            <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero auctor, tincidunt lacus eu, commodo metus. In blandit accumsan egestas. Sed non enim purus. Aliquam tempor congue justo, ac malesuada ex elementum eu.</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rock.volleyballclub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../Home/main.js"></script>
+    <script src="../Login/login.js"></script>
+</body>
+</html>
