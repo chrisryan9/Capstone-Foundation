@@ -131,24 +131,18 @@ myTrainings.addEventListener('click', function getTrainings(e) {
         });
         
         const cancelTrainingBtn = document.querySelectorAll('#cancelbtn');
-        
+
         cancelTrainingBtn.forEach(btn => {
-            btn.addEventListener('click', function cancel(event) {
-                const appointmentID = event.target.dataset.id;
-                console.log("Appointment ID:", appointmentID);
-                axios.delete(`${baseURL4}/schedule/${appointmentID}`)
-                .then(() => {
-                  axios.get(`${baseURL4}/schedule/${userID}`)
-                    .then(res => {
-                      upcomingAppointmentsContainer.innerHTML = '';
-                      console.log(res.data)
-                      // rest of the code
-                    })
-                    .catch(err => console.log(err));
-                })
-                .catch(err => console.log(err));
-              });
-            });
+          btn.addEventListener('click', function cancel(event) {
+              const appointmentID = event.target.dataset.id;
+              console.log("Appointment ID:", appointmentID);
+              axios.delete(`${baseURL4}/schedule/${appointmentID}`)
+              .then(() => {
+                getTrainings();
+              })
+              .catch(err => console.log(err));
+          })
+        })
           };
       });
 });

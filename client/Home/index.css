@@ -551,14 +551,15 @@ header {
   background-color: #2E2C2F;
   padding: 20px;
   border-radius: 10px;
-  /* box-shadow: 0px 0px 10px 0px #333; */
   color: #E9ECF5;
-  width: fit-content;
-  height: 120px;
+  width: 200px;
+  height: 160px;
   margin-top: 10px;
   margin-right: 10px;
   vertical-align: top;
+  margin-bottom: 10px;
 }
+
 
 .training p {
   margin-top: 5px;
@@ -588,9 +589,10 @@ header {
 
 #past-list-appointments, #upcoming-list-appointments{
   display: flex;
-  flex-direction: row;
-  /* align-items: center; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 #past-list-appointments {
